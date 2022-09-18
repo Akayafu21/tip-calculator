@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+
+  <main>
+    <header>
+      <div><img src="/images/logo.svg" alt="logo"></div>
+    </header>
+    <section class="calculator">
+      
+      <nav class="left">
+
+        <div class="insert">
+          <div>
+            <h4>Bill</h4>
+            <h4 id="warnbill" class="warning"></h4>
+          </div> 
+          <label for="dollar"><img src="/images/icon-dollar.svg" alt="dollar"></label>
+          <input id="bill" type="text" placeholder="0">
+        </div>
+
+        <div class="tip">
+          <h4>Select Tip %</h4>
+          <div id = "box"class="sixbox">
+            <button id="five" class="but">5%</button>
+            <button id="ten" class="but">10%</button>
+            <button id="fifteen" class="but">15%</button>
+            <button id="twt-five" class="but">20%</button>
+            <button id="fifty" class="but">50%</button>
+            <input id="custom" type="text" placeholder="Custom">
+          </div>
+        </div>
+
+        <div class="insert">
+          <div>
+            <h4>Number of People</h4>
+            <h4 id="warnper" class="warning"></h4>
+          </div> 
+          <label for="person"><img src="/images/icon-person.svg" alt="dollar"></label>
+          <input id="person" type="text" placeholder="0">
+        </div>
+
+      </nav>
+
+      <nav class="right">
+
+        <div class="amount">
+          <div class="amleft">
+            <h3>Tip Amount</h3>
+            <p>/ person</p>
+          </div>
+          <div class="amright">
+            <h1 id="tip">$0.00</h1>
+          </div>
+        </div>
+
+        <div class="total">
+          <div class="ttleft">
+          <h3>Total</h3>
+          <p>/ person</p>
+          </div>
+          <div class="ttright">
+            <h1 id="total">$0.00</h1>
+          </div>
+        </div>
+
+        <div class="butt">
+          <button id="reset">Reset</button>
+        </div>
+       
+      </nav>
+
+    </section>
+
+  </main>
+
+  <script src="/js/script.js"></script>
+
+  
+
+  
+  
+
+  
+
+  
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
